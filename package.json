@@ -1,0 +1,16 @@
+{
+  "name": "savor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/style.css -o ./public/style.css",
+    "watch": "tailwindcss -i ./src/style.css -o ./public/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
