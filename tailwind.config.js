@@ -7,12 +7,34 @@ module.exports = {
         primary: "#ED821F",
         
       },
+      backgroundColor:{
+        primary: "#ED821F",
+      },r4qa
       fontFamily: {
         primary: "Nunito",
-        secondary: "Cormorant Upright"
+        secondary: "Cormorant Upright ",
       },
       width:{
         headerImage: "500px"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
       }
     },
   },

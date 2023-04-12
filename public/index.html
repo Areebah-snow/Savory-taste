@@ -4,75 +4,371 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Savor</title>
 </head>
 <body class="font-primary overflow-x-hidden">
-    <div class=" p-6 px-10 relative ">
+    <div class=" p-6 px-10">
         <nav class="flex items-center justify-between">
-            <div class="flex items-center -space-x-8 justify-between w-1/2">
-                <h1 class="text-xl font-bold">SAVOR</h1>
-
-                <ul class="flex space-x-10">
+            <div class="flex items-center -space-x-8 justify-between lg:w-1/2">
+                <h1 class=" text-md lg:text-xl font-bold">SAVOR</h1>
+                 
+               
+                <ul class=" hidden lg:flex space-x-10">
                     <li class=""><a href="">Home</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">Specials</a></li>
                     <li><a href="">About Us</a></li>
                 </ul>
+             
            </div>
 
         <div class="flex gap-5">
             <div class="flex gap-5 items-center">
-                <a class="bg-white p-2 rounded-full border border-black"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6">
+                <a class="bg-white p-2 rounded-full border border-black"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" w-4 lg:w-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                   </svg>
                   </a>
-                <a class="bg-white p-2 rounded-full border border-black"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <a class="bg-white p-2 rounded-full border border-black"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" w-4 lg:w-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                   </svg>
                   </a>
             </div>
             <div>
-                <button class="bg-black border-2 border-white text-white px-5 py-2 rounded-full">Order Now</button>
+                <button class="hidden lg:block bg-black border-2 border-white text-white px-5 py-2  rounded-full">Order Now</button>
             </div>
 
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                  </svg>
+                  
+            </div>
       
            </div>
           </nav>
         </div>
-     <div class="w-1/2 absolute -right-10 -top-0 -z-10 "><img src="images/HeaderBlob.png" alt=""></div>  
+     <div class=" hidden lg:block w-1/2 absolute -right-10 -top-0 -z-10 "><img src="images/HeaderBlob.png" alt=""></div>  
 
 
 
-     <header class=" flex flex-row justify-between items-start max-h-96 p-20 items-center ">
-        <div class="w-96 h-fit">
-            <h2>CHEF'S SPECIAL</h2>
-            <h1>Making your taste buds work</h1>
-            <p>Experience quality, mouth-watering and exquisite cuisine with Savor. Good food choices are good investments and they play an important role in a balanced diet.</p>
+     <header class=" p-4 px-8 lg:flex lg:flex-col  lg:p-20 lg:px-10 lg:min-h-screen">
 
-            <button class="flex bg-black text-white p-4 items-center">Explore Menu
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+        <div class="w-9/12  lg:w-full flex lg:flex-row lg:justify-between lg:items-start">
+                    <div class=" lg:w-96 h-fit">
+                        <h2 class="font-secondary  text-primary ">CHEF'S SPECIAL</h2>
+                        <h1 class="font-secondary space-x-3 text-4xl lg:text-6xl capitalize my-3">Making your taste buds work</h1>
+                        <p class="text-sm my-5">Experience quality, mouth-watering and exquisite cuisine with Savor. Good food choices are good investments and they play an important role in a balanced diet.</p>
+            
+                        <button class="flex shadow shadow-xl bg-black text-white py-2 px-4 items-center rounded-full">Explore Menu
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 pl-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                            </svg>
+                            
+                            </button>
+                    </div>
+                    
+                    <div class="hidden lg:block ">
+                        <div class="   lg:relative z-50 :relative -top-20"><img class="lg:w-headerImage w-72" src="images/Ellipse 2.png" alt="">
+                            <div class="absolute top-0  lg:"><img class="w-full" src="images/Mask group.png" alt=""></div></div>
+                            <div class=" lg:relative -top-96 -left-14 z-50">
+                                <div class=" lg:relative -top-20 left-8"><img class="w-14 lg:w-20" src="images/meatballs.png" alt="">
+                                    <div class="absolute  lg: -left-5 top-36 "><img class="w-14 lg:w-20" src="images/headerburg.png" alt="">
+                                    </div>
+                                    <div class="absolute lg:top-72 left-14"><img class=" w-14 lg:w-20" src="images/foodheader.png" alt=""></div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+     
+
+
+        <div >
+            <div class="hidden lg:flex px-5 py-10 rounded-full shadow-md justify-center items-center">
+                <h3 class="font-bold  lg:mx-5">Book A Table</h3>
+                <div class="flex flex-row items-center mx-4">
+                    <label for="date" class="font-semibold mx-2">Date</label>
+                    <div class="flex flex-row">
+                        <input class="border-2 border-gray-300 rounded-full w-32 placeholder: px-4" type="text" placeholder="pick a date">
+                    </div>
+                   
+                </div>
+
+                <div class="flex flex-row items-center mx-4">
+                    <label for="date" class="font-semibold mx-2">Date</label>
+                    <div class="flex flex-row">
+                        <input class="border-2 border-gray-300 rounded-full w-32 placeholder: px-4" type="time" placeholder="Select time">
+                    </div>
+                </div>
+
+                <div class="flex flex-row items-center mx-4">
+                    <label for="date" class="font-semibold mx-2">Date</label>
+                    <div class="flex flex-row">
+                        <input class="border-2 border-gray-300 rounded-full w-32 placeholder: px-4" type="text" placeholder="Select table">
+                    </div>
+                </div>
+
+                <button class="bg-black font-bold text-white px-6 py-2 rounded-full mx-4" href="">Book Now</button>
+            </div>
+        </div>
+    </header>
+    </div>
+
+
+    <section class="w-11/12 mx-auto my-10">
+
+        <!--HEADING DIV-->
+        <div class="flex justify-between items-end my-10">
+            <div class="hidden lg:block"></div>
+            <div class=" text-center">
+                <div class=" relative">
+                    <div class="absolute -top-3 left-24 transform -rotate-6 lg:-top-6 left-2/4"><img class="w-8 lg:w-10" src="images/chef-hat.png" alt=""></div>
+                   <h1 class="text-primary  text-base uppercase font-primary lg:text-md">What we offer</h1>
+                </div>
+              <h2 class=" inline text-4xl font-bold font-secondary lg:text-4xl">Our Services</h2>
+             
+             </div>
+
+             <div class="align-text-bottom hover:underline">
+                <a class="font-semibold" href="/">See All</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                   </svg>
                   
-            </button>
+              </div>
         </div>
-        <div>
+        <!--END OF HEADING DIV-->
+         
+       
+      
 
-           <div >
-            <div class="">
-                <div class=" relative z-50 top-10 "><img class="w-headerImage" src="images/Ellipse 2.png" alt="">
-                    <div class="absolute top-0 "><img class="w-full" src="images/Mask group.png" alt=""></div></div>
-                
-               </div>
+       <div class="w-full grid grid-cols-1 gap-10 place-items-center md:grid md:grid-cols-2  lg:grid lg:grid-cols-4">
+        <div class="flex flex-col items-center justify-center mt-10  shadow-xl rounded-xl">
+            <!----Image div-->
+            <div class=" w-fit p-6 py-4 rounded-full bg-orange-200 -mt-10"><img class="w-8" src="images/quality.png" alt=""></div>
+            <!--Details div-->
+            <div class=" flex flex-col items-center p-6">
+                <div class="text-center">
+                    <h2  class="font-bold">BEST QUALITY</h2>
+                    <p class="text-sm h-16">We only give the best quality tasty meals. Our customer services also speaks for itself.</p>
+                   </div>
+                <div class="text-right w-full mt-5"><a class=" text-primary" href="">View More</a></div>
             </div>
-          
-           <div>
-            <!-- <img  class="w-100" src="images/Ellipse 2.png" alt=""> -->
-           </div>
+           
         </div>
-     </header>
-    </div>
+      <!--Second offer div-->
+        <div class="flex flex-col items-center justify-center mt-10 shadow-xl rounded-xl">
+            <div class="w-fit p-5 rounded-full bg-orange-200 -mt-10"><img class="w-10" src="images/dine.png" alt=""></div>
+            <div class=" flex flex-col items-center   p-6 rounded-2xl">
+                <div class="text-center">
+                    <h2  class="font-bold">DINE IN</h2>
+                    <p class="text-sm h-16">We provide you with a serene environment that helps you get cozy. Our restaurant is very suitable for any occasion.</p>
+                   </div>
+                   <div class="text-right w-full mt-5"><a class=" text-primary" href="">View More</a></div>
+            </div>
+           
+        </div>
+
+        <div class="flex flex-col items-center justify-center mt-10 shadow-xl rounded-xl">
+            <div class="w-fit p-5 rounded-full bg-orange-200 -mt-10"><img class="w-10" src="images/mdi_delivery-dining-electric.png" alt=""></div>
+            <div class="flex flex-col items-center p-6 rounded-2xl ">
+                <div class="text-center">
+                    <h2 class="font-bold">SWIFT DELIVERY</h2>
+                    <p class="text-sm h-16">Our delivery service is quick. Place your orders from the comfort of
+                         your home and we get it to you in just a few minutes.</p>
+                   </div>
+                   <div class="text-right w-full mt-5"><a class=" text-primary" href="">View More</a></div>
+            </div>
+           
+        </div>
+
+        <div class="flex flex-col items-center justify-center mt-10 shadow-xl rounded-xl">
+            <div class="w-fit p-5 py-7 rounded-full bg-orange-200 -mt-10"><img class="w-10" src="images/mdi_buffet.png" alt=""></div>
+            <div class="flex flex-col items-center p-6 rounded-2xl ">
+                <div class="text-center">
+                    <h2 class="font-bold">BUFFET SERVICE</h2>
+                    <p class="text-sm h-16">Our buffet service is one of it’s kind. Come in with your loved ones and eat as much as you can.</p>
+                   </div>
+                   <div class="text-right w-full mt-5"><a class=" text-primary" href="">View More</a></div>
+            </div>
+           
+        </div>
+  </section>
+
+  <!--MENU DIV-->
+   <section class="w-11/12 mx-auto mt-28">
+     <div class="flex flex-col justify-between items-center my-30 md:flex-row lg:flex-row lg:items-end">
+            <div class="hidden lg:block"></div>
+            <div class=" text-center">
+                <div class=" relative">
+                    <div class="absolute -top-3 left-24 transform -rotate-6 lg:-top-6 left-2/4"><img class="w-8 lg:w-10" src="images/chef-hat.png" alt=""></div>
+                   <h1 class="text-primary  text-base uppercase font-primary lg:text-md">What we offer</h1>
+                </div>
+              <h2 class=" inline text-4xl font-bold font-secondary lg:text-4xl">Explore Our Menu</h2>
+             
+             </div>
+
+             <div class="align-text-bottom hover:underline">
+                <a class="font-semibold" href="/">Explore All</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+              </div>
+        </div>
+  <!--MENU GRID CONTAINER-->
+        <div class="grid grid-cols-1   gap-10 my-10 md:grid-cols-2 lg:grid-cols-3">
+            <!--Menu card container-->
+            <div class="bg-white shadow-lg shadow-gray-200 rounded-2xl">
+                <!--Menu Image div-->
+                <div><img class="w-full h-1/2" src="images/meat steak.png" alt=""></div>
+                <!--Menu details div-->
+                <div class="m-5 flex flex-row justify-between items-start">
+                    <div>
+                        <h1 class="font-primary font-bold text-xl">Steak & Mashed Potatoes</h1>
+                        <p>Spicy and sweet steak with mashed potatoes or any side of your choice</p>
+                    </div>
+                    <h2 class="text-2xl font-primary text-primary font-semibold">$99</h1>
+                </div>
+                <!--end of menu details div-->
+            </div>
+            <!--PASTA-->
+            <div class="bg-white shadow-lg shadow-gray-200 rounded-2xl">
+                <!--Menu Image div-->
+                <div><img class="w-full h-1/2" src="images/spag.png" alt=""></div>
+                <!--Menu details div-->
+                <div class="m-5 flex flex-row justify-between items-start">
+                    <div>
+                        <h1 class="font-primary font-bold text-xl">Spaghetti Bolognese</h1>
+                        <p>Spaghetti with tomato sauce and shredded beef</p>
+                    </div>
+                    <h2 class="text-2xl font-primary text-primary font-semibold">$99</h1>
+                </div>
+            </div>
+            <!--SALMON-->
+            <div class="bg-white shadow-lg shadow-gray-200 rounded-2xl">
+                <!--Menu Image div-->
+                <div><img class="w-full h-1/2" src="images/salmon.png" alt=""></div>
+                <!--Menu details div-->
+                <div class="m-5 flex flex-row justify-between items-start">
+                    <div>
+                        <h1 class="font-primary font-bold text-xl">Salmon</h1>
+                        <p>Salmon fish and sauce with side of your choice</p>
+                    </div>
+                    <h2 class="text-2xl font-primary text-primary font-semibold">$99</h1>
+                </div>
+            </div>
+           <!--PIZZA GRID-->
+            <div class="bg-white shadow-lg shadow-gray-200 rounded-2xl">
+                <!--Menu Image div-->
+                <div><img class="w-full h-1/2" src="images/pizza.png" alt=""></div>
+                <!--Menu details div-->
+                <div class="m-5 flex flex-row justify-between items-start">
+                    <div>
+                        <h1 class="font-primary font-bold text-xl">Pizza</h1>
+                        <p>Chicken crammed-crust large pizza with your preferred toppings</p>
+                    </div>
+                    <h2 class="text-2xl font-primary text-primary font-semibold">$99</h1>
+                </div>
+            </div>
+            <!--PANCAKES-->
+            <div class="bg-white shadow-lg shadow-gray-200 rounded-2xl">
+                <!--Menu Image div-->
+                <div><img class="w-full h-1/2" src="images/pancakes.png" alt=""></div>
+                <!--Menu details div-->
+                <div class="m-5 flex flex-row justify-between items-start">
+                    <div>
+                        <h1 class="font-primary font-bold text-xl">Pancakes & Ice cream</h1>
+                        <p>Pancakes with any flavoured ice-cream</p>
+                    </div>
+                    <h2 class="text-2xl font-primary text-primary font-semibold">$99</h1>
+                </div>
+            </div>
+            <!--BURGER-->
+            <div class="bg-white shadow-lg shadow-gray-200 rounded-2xl">
+                <!--Menu Image div-->
+                <div><img class="w-full h-1/2" src="images/burger.png" alt=""></div>
+                <!--Menu details div-->
+                <div class="m-5 flex flex-row justify-between items-start">
+                    <div>
+                        <h1 class="font-primary font-bold text-xl">Jumbo Burger</h1>
+                        <p>Chicken and beef patty + extra cheese </p>
+                    </div>
+                    <h2 class="text-2xl font-primary text-primary font-semibold">$99</h1>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <section class="w-11/12 relative mx-auto rounded-3xl p-10 bg-pink-100 shadow-xl">
+    <h2 class="text-3xl text-primary font-bold text-right">Special Offer</h2>
+    <div class=" mt-10 flex items-center flex-col justify-around gap-10 lg:flex-row lg:justify-between lg:items-center relative">
+        
+        <div class="flex flex-col items-center gap-10 lg:flex-row lg:justify-between lg:items-center relative">
+            <div><img class="w-80 rounded-full" src="images/donut.png" alt=""></div>
+            <div class="flex items-start flex-col lg:justify-between">
+                <div class="my-5">
+                    <h2 class="font-semibold text-lg text-primary">Only for</h2>
+                    <h1 class="font-bold text-md lg:text-xl">Pastries / Dessert</h1>
+                </div>
+                <div class="my-5">
+                    <p class="font-bold text-md">Regular Price</p>
+                    <h2 class="font-bold text-primary text-md lg:text-xl">$100</h2>
+                </div>
+                <div class="my-5">
+                    <p class="font-bold text-md">Offer Price</p>
+                    <h2 class="font-bold text-primary text-md lg:text-xl">$50</h2>
+                </div>
+            </div>
+        </div>
     
+        <div class=" w-3/5 lg:w-1/4 text-left">
+           
+    
+            <h1 class="text-5xl uppercase my-3">50% Off</h1>
+            <p class="my-4">On every pastry or dessert you order when dinning-in with us or as delivery, you get 50% off on your order</p>
+    
+            <p class="text-primary font-semibold my-3">Use coupon : special599</p>
+    
+            <button class="border-2 border-orange-300 px-5 py-2 font-semibold text-primary rounded-full">Order Now</button>
+        </div>    
+    </div>
+    <div class="absolute -bottom-52  -right-14"><img class="w-72 md:w-60 lg:w-72" src="images/tomatoes-removebg-preview.png" alt=""></div>
+   
+   </section>
+<!---TEAM SECTION-->
+   <section>
+    <div class="flex flex-col justify-between items-center my-30 md:flex-row lg:flex-row lg:items-end">
+        <div class="hidden lg:block"></div>
+        <div class=" text-center">
+            <div class=" relative">
+                <div class="absolute -top-3 left-24 transform -rotate-6 lg:-top-6 left-2/4"><img class="w-8 lg:w-10" src="images/chef-hat.png" alt=""></div>
+               <h1 class="text-primary  text-base uppercase font-primary lg:text-md">Team Members </h1>
+            </div>
+          <h2 class=" inline text-4xl font-bold font-secondary lg:text-4xl">Meet Our Qualified Team</h2>
+         
+         </div>
+
+         <div class="align-text-bottom hover:underline">
+            <a class="font-semibold" href="/">See All</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
+          </div>
+    </div>
+
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">0</li>
+            <li class="glide__slide">1</li>
+            <li class="glide__slide">2</li>
+          </ul>
+        </div>
+      </div>
+   </section>
 </body>
 </html>
