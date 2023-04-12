@@ -9,7 +9,7 @@ module.exports = {
       },
       backgroundColor:{
         primary: "#ED821F",
-      },r4qa
+      },
       fontFamily: {
         primary: "Nunito",
         secondary: "Cormorant Upright ",
@@ -34,7 +34,7 @@ module.exports = {
 
 
 
-        
+
       }
     },
   },
