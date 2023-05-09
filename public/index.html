@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    
 
     <link rel="stylesheet" href="style.css">
+
+    <!---SWIPER CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <title>Savor</title>
 </head>
 <body class="font-primary overflow-x-hidden">
@@ -59,7 +63,7 @@
         <div class="w-9/12  lg:w-full flex lg:flex-row lg:justify-between lg:items-start">
                     <div class=" lg:w-96 h-fit">
                         <h2 class="font-secondary  text-primary ">CHEF'S SPECIAL</h2>
-                        <h1 class="font-secondary space-x-3 text-4xl lg:text-6xl capitalize my-3">Making your taste buds work</h1>
+                        <h1 class="font-secondary space-x-3 text-4xl lg:text-6xl font-bold capitalize my-3">Making your taste buds work</h1>
                         <p class="text-sm my-5">Experience quality, mouth-watering and exquisite cuisine with Savor. Good food choices are good investments and they play an important role in a balanced diet.</p>
             
                         <button class="flex shadow shadow-xl bg-black text-white py-2 px-4 items-center rounded-full">Explore Menu
@@ -303,7 +307,7 @@
         </div>
    </section>
 
-   <section class="w-11/12 relative mx-auto rounded-3xl p-10 bg-pink-100 shadow-xl">
+   <section class="w-11/12 my-20 relative mx-auto rounded-3xl p-10 bg-pink-100 shadow-xl">
     <h2 class="text-3xl text-primary font-bold text-right">Special Offer</h2>
     <div class=" mt-10 flex items-center flex-col justify-around gap-10 lg:flex-row lg:justify-between lg:items-center relative">
         
@@ -339,36 +343,147 @@
     <div class="absolute -bottom-52  -right-14"><img class="w-72 md:w-60 lg:w-72" src="images/tomatoes-removebg-preview.png" alt=""></div>
    
    </section>
+
+
+
 <!---TEAM SECTION-->
-   <section>
-    <div class="flex flex-col justify-between items-center my-30 md:flex-row lg:flex-row lg:items-end">
-        <div class="hidden lg:block"></div>
-        <div class=" text-center">
-            <div class=" relative">
-                <div class="absolute -top-3 left-24 transform -rotate-6 lg:-top-6 left-2/4"><img class="w-8 lg:w-10" src="images/chef-hat.png" alt=""></div>
-               <h1 class="text-primary  text-base uppercase font-primary lg:text-md">Team Members </h1>
+   <section class=" p-10 w-11/12 mx-auto">
+        <div class="flex flex-col justify-between items-center my-30 md:flex-row lg:flex-row lg:items-end">
+            <div class="hidden lg:block"></div>
+            <div class=" text-center">
+                <div class=" relative">
+                    <div class="absolute -top-3 left-24 transform -rotate-6 lg:-top-6 left-2/4"><img class="w-8 lg:w-10" src="images/chef-hat.png" alt=""></div>
+                <h1 class="text-primary  text-base uppercase font-primary lg:text-md">Team Members </h1>
+                </div>
+            <h2 class=" inline text-4xl font-bold font-secondary lg:text-4xl">Meet Our Qualified Team</h2>
+            
             </div>
-          <h2 class=" inline text-4xl font-bold font-secondary lg:text-4xl">Meet Our Qualified Team</h2>
-         
-         </div>
 
-         <div class="align-text-bottom hover:underline">
-            <a class="font-semibold" href="/">See All</a>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-              </svg>
-          </div>
-    </div>
+            <div class="align-text-bottom hover:underline">
+                <a id="next-button" class="font-semibold" href="/">See All</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                </svg>
+            </div>
+        </div>
 
-    <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">0</li>
-            <li class="glide__slide">1</li>
-            <li class="glide__slide">2</li>
-          </ul>
+        
+          <div class="team-carousel mt-10 swiper mySwiper">
+            <div class="swiper-wrapper mb-4">
+             <div class="swiper-slide">
+                <div class="team-member">  
+                    <div class="rounded-xl shadow-xl overflow-hidden"><img class="w-auto" src="images/team-member1.png" alt=""></div>
+                      <div class="team-info">
+                            <h1 class="font-secondary font-bold text-xl mb-2">Cynthia Benjamin</h1>
+                            <h2 class="tracking-widest mb-4">Founder/CEO</h2>
+                            <p class="break-words">
+                                Food enthusiast and culinary expert. Cynthia is a business owner proficient in customer services and management skills. Dedicated and focused professional that has experience in food management and team supervision.  
+                            </p>
+                      </div>
+                </div>
+             </div>
+
+             <div class="swiper-slide ">
+                <div class="team-member  ">  
+                    <div class="rounded-md shadow-xl overflow-hidden"><img class="w-auto" src="images/team-member2.png" alt=""></div>
+                      <div class="team-info" >
+                            <h1>Andre George</h1>
+                            <h2>CHEF</h2>
+                            <p>
+                                Food enthusiast and culinary expert. Andre is a business owner proficient in customer services and management skills. Dedicated and focused professional that has experience in food management and team supervision.  
+                            </p>
+                      </div>
+                </div>
+             </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    
+   </section>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <footer class="bg-black text-white">
+    <div class=" p-10 footer-div">
+        <div class="flex flex-row justify-between pr-10">
+            <div>
+                <h2>Get Started</h1>
+                <p>Book a table</p>
+                <p>Delivery</p>
+                <p>Order Status</p>
+                <p>Reservations</p>
+                <p>All Receipts</p>
+                <p>Seasonal Special</p>
+             </div>
+             <div>
+                <h2>Company</h1>
+                    <p>About</p>
+                    <p>Team</p>
+                    <p>Contact Us</p>
+                    <p>News & Events</p>
+                    <p>Careers</p>
+        
+             </div>
+             <div>
+                <h2>Help</h1>
+                    <p>Privacy</p>
+                    <p>Terms & Conditions</p>
+                    <p>Policy</p>
+                    <p>FAQ</p>
+             </div>
+        </div>
+    
+      <div class="text-center">
+        <h1 class="text-2xl capitalize">Subscribe to our newsletter</h1>
+        <p>Join an ever-growing community of food lovers now! Stay up to date with the latest meals on our menu, special offers & new dish announcement</p>
+
+        <div class="subscribe border-2 border-white rounded-full overflow-hidden flex justify-between w-1/2 items-center mx-auto">
+            <input class="bg-transparent py-3 px-3 outline-none" type="text" name="" id="" placeholder="example@gmail.com">
+             <div class="bg-orange-500 py-3 px-2 inline-block">Subscribe</div>
         </div>
       </div>
-   </section>
+    
+    </div>
+   </footer>
+
+
+
+   <script src="main.js"></script>
+<script>
+  new Glide('.glide').mount()
+</script>
 </body>
 </html>

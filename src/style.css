@@ -4,3 +4,51 @@
 @tailwind components;
 @tailwind utilities;
 
+footer h2{
+    font-size: large;
+    margin-block: 1.2rem;
+}
+
+footer p{
+    font-size: smaller;
+    margin-block: 1.2rem;
+}
+
+.footer-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* .subscribe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+.subscribe input::placeholder{
+    color: gray;
+    font-weight: 600;
+}
+
+.team-carousel {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .team-member {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    justify-self: center;
+    
+
+  }
+
+  .team-member img{
+    width: 300px;
+  }
+.team-info{
+    width: 300px;
+}
+ 
