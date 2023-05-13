@@ -307,6 +307,7 @@
         </div>
    </section>
 
+<!----SPECIAL OFFER SECTION-->
    <section class="w-11/12 my-20 relative mx-auto rounded-3xl p-10 bg-pink-100 shadow-xl">
     <h2 class="text-3xl text-primary font-bold text-right">Special Offer</h2>
     <div class=" mt-10 flex items-center flex-col justify-around gap-10 lg:flex-row lg:justify-between lg:items-center relative">
@@ -368,30 +369,35 @@
         </div>
 
         
-          <div class="team-carousel mt-10 swiper mySwiper">
+          <div class="team-carousel mt-10 swiper mySwiper m">
             <div class="swiper-wrapper mb-4">
-             <div class="swiper-slide">
-                <div class="team-member">  
-                    <div class="rounded-xl shadow-xl overflow-hidden"><img class="w-auto" src="images/team-member1.png" alt=""></div>
-                      <div class="team-info">
+
+             <div class="swiper-slide mb-12">
+                <div class="flex flex-col lg:flex lg:flex-row lg:justify-evenly">  
+                    <div class=" w-72  mb-5 rounded-xl shadow-xl overflow-hidden"><img class="w-full" src="images/team-member1.png" alt=""></div>
+                      <div class="team-info items-end ">
                             <h1 class="font-secondary font-bold text-xl mb-2">Cynthia Benjamin</h1>
                             <h2 class="tracking-widest mb-4">Founder/CEO</h2>
                             <p class="break-words">
                                 Food enthusiast and culinary expert. Cynthia is a business owner proficient in customer services and management skills. Dedicated and focused professional that has experience in food management and team supervision.  
                             </p>
-                      </div>
+
+                        <div class="my-8"><a class="text-primary font-semibold hover:border-b-2 border-orange-400" href="">Read More</a></div>
+                      </div> 
                 </div>
              </div>
-
-             <div class="swiper-slide ">
-                <div class="team-member  ">  
-                    <div class="rounded-md shadow-xl overflow-hidden"><img class="w-auto" src="images/team-member2.png" alt=""></div>
+<!--  -->
+             <div class="swiper-slide mb-12">
+                <div class="flex flex-col lg:flex lg:flex-row lg:justify-evenly">  
+                    <div class="w-72 mb-5 rounded-md shadow-xl overflow-hidden"><img class="w-full" src="images/team-member2.png" alt=""></div>
                       <div class="team-info" >
-                            <h1>Andre George</h1>
-                            <h2>CHEF</h2>
-                            <p>
+                            <h1 class="font-secondary font-bold text-xl mb-2">Andre George</h1>
+                            <h2 class="tracking-widest mb-4">CHEF</h2>
+                            <p class="break-words">
                                 Food enthusiast and culinary expert. Andre is a business owner proficient in customer services and management skills. Dedicated and focused professional that has experience in food management and team supervision.  
                             </p>
+                            
+                        <div class="my-8"><a class="text-primary font-semibold  hover:border-b-2 border-orange-400" href="">Read More</a></div>
                       </div>
                 </div>
              </div>
@@ -437,8 +443,8 @@
 
 
    <footer class="bg-black text-white">
-    <div class=" p-10 footer-div">
-        <div class="flex flex-row justify-between pr-10">
+    <div class=" p-10  lg:grid lg:grid-cols-2">
+        <div class="flex break-words gap-5 pb-10 lg:flex-row lg:justify-between lg:pr-10">
             <div>
                 <h2>Get Started</h1>
                 <p>Book a table</p>
@@ -466,7 +472,7 @@
              </div>
         </div>
     
-      <div class="text-center">
+      <div class="  text-center">
         <h1 class="text-2xl capitalize">Subscribe to our newsletter</h1>
         <p>Join an ever-growing community of food lovers now! Stay up to date with the latest meals on our menu, special offers & new dish announcement</p>
 

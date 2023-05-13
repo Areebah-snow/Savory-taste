@@ -17,6 +17,8 @@ footer p{
 .footer-div{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    word-break: break-all;
+    
 }
 /* .subscribe{
     display: flex;
@@ -33,7 +35,9 @@ footer p{
     justify-content:center;
     align-items: center;
     overflow: hidden;
+    max-width: 100vw;
   }
+ 
   
   .team-member {
     display: flex;
@@ -41,14 +45,9 @@ footer p{
     justify-content:space-around;
     align-items: center;
     justify-self: center;
-    
-
   }
 
-  .team-member img{
-    width: 300px;
-  }
+ 
 .team-info{
     width: 300px;
 }
- 
