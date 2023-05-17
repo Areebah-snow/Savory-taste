@@ -11,6 +11,7 @@
     <!---SWIPER CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Savor</title>
 </head>
 <body class="font-primary overflow-x-hidden">
@@ -312,8 +313,8 @@
     <h2 class="text-3xl text-primary font-bold text-right">Special Offer</h2>
     <div class=" mt-10 flex items-center flex-col justify-around gap-10 lg:flex-row lg:justify-between lg:items-center relative">
         
-        <div class="flex flex-col items-center gap-10 lg:flex-row lg:justify-between lg:items-center relative">
-            <div><img class="w-80 rounded-full" src="images/donut.png" alt=""></div>
+        <div class="flex flex-row items-center gap-10 lg:flex-row lg:justify-between lg:items-center relative">
+            <div><img class="w-52 rounded-full lg:w-80" src="images/donut.png" alt=""></div>
             <div class="flex items-start flex-col lg:justify-between">
                 <div class="my-5">
                     <h2 class="font-semibold text-lg text-primary">Only for</h2>
@@ -341,10 +342,10 @@
             <button class="border-2 border-orange-300 px-5 py-2 font-semibold text-primary rounded-full">Order Now</button>
         </div>    
     </div>
-    <div class="absolute -bottom-52  -right-14"><img class="w-72 md:w-60 lg:w-72" src="images/tomatoes-removebg-preview.png" alt=""></div>
+
+    <div class="relative -bottom-52 -right-14 lg:-bottom-52 lg:-right-14"><img class="w-60 md:w-60 lg:w-72" src="images/tomatoes-removebg-preview.png" alt=""></div>
    
    </section>
-
 
 
 <!---TEAM SECTION-->
@@ -400,6 +401,9 @@
                         <div class="my-8"><a class="text-primary font-semibold  hover:border-b-2 border-orange-400" href="">Read More</a></div>
                       </div>
                 </div>
+
+
+        
              </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -408,7 +412,68 @@
    </section>
    
 
+    <!----CUSTOMER REVIEW-->
+    <section>
 
+        <!--review container-->
+        <div class="mt-8">
+            <div class="flex items-center justify-center flex-wrap">
+                <img src="images/Ellipse 5.png" alt="" class="cursor-pointer w-20 h-20 rounded-full m-3 p-1 user-pic active-pic" onclick="showReview()" >
+                <img src="images/Ellipse 5.png" alt="" class="cursor-pointer w-20 h-20 rounded-full m-3 p-1 user-pic" onclick="showReview()" >
+                <img src="images/Ellipse 5.png" alt="" class="cursor-pointer w-20 h-20 rounded-full m-3 p-1 user-pic" onclick="showReview()" >
+                <img src="images/Ellipse 5.png" alt="" class="cursor-pointer w-20 h-20 rounded-full m-3 p-1 user-pic" onclick="showReview()" >
+            </div>
+
+            <div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]">
+                <div class="user-text active-text">
+                    <div class="stars">
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                    </div>
+                    <p class="md:text-2xl mb-6">"This should be used to tell a story and include any testimonials you might have about your product or service for your clients!"" </p>
+                    <h4 class="font-bold text-primary mb-1">Markin Nesus</h4>
+                    <p>IOS Developer</p>
+                </div>
+
+                <div class="user-text">
+                    <div class="stars">
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                    </div>
+                    <p class="md:text-2xl mb-6">"This should be used to tell a story and include any testimonials you might have about your product or service for your clients!" </p>
+                    <h4 class="font-bold text-primary mb-1">Mason Mount</h4>
+                    <p>IOS Developer</p>
+                </div>
+                <div class="user-text">
+                    <div class="stars">
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                    </div>
+                    <p class="md:text-2xl mb-6">"This should be used to tell a story and include any testimonials you might have about your product or service for your clients!"" </p>
+                    <h4 class="font-bold text-primary mb-1">Lionel Messi</h4>
+                    <p>IOS Developer</p>
+                </div>
+
+                <div class="user-text">
+                    <div class="stars">
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                    </div>
+                    <p class="md:text-2xl mb-6">"This should be used to tell a story and include any testimonials you might have about your product or service for your clients!"" </p>
+                    <h4 class="font-bold text-primary mb-1">John Doe</h4>
+                    <p>IOS Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

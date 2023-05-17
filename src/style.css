@@ -18,7 +18,6 @@ footer p{
     display: grid;
     grid-template-columns: 1fr 1fr;
     word-break: break-all;
-    
 }
 /* .subscribe{
     display: flex;
@@ -51,3 +50,42 @@ footer p{
 .team-info{
     width: 300px;
 }
+
+.user-pic.active-pic{
+    border: 2px solid #ff7d3b;
+
+}
+.user-text{
+    display:none
+}
+
+.user-text.active-text{
+    display: block;
+    animation: moveup 1s linear forwards;
+}
+
+@keyframes moveup {
+    0%{
+        margin-top: 40px;
+        opacity: 0;
+    }
+    50%{
+        margin-top: 20px;
+        opacity: 0.1;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+.user-pic{
+    transition: all 0.2s ease;
+}
+
+.star{
+    color: #ff7d3b;
+}
+
+
+
