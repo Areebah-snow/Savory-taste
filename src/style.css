@@ -55,6 +55,10 @@ footer p{
     border: 2px solid #ff7d3b;
 
 }
+
+.user-pic{
+    transform: scale(1.2);
+}
 .user-text{
     display:none
 }
@@ -80,7 +84,7 @@ footer p{
 }
 
 .user-pic{
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
 }
 
 .star{

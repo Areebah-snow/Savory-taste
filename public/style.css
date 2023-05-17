@@ -526,12 +526,16 @@ video {
   position: relative;
 }
 
-.-bottom-52{
-  bottom: -13rem;
+.-left-1\/4{
+  left: -25%;
 }
 
 .-left-14{
   left: -3.5rem;
+}
+
+.-left-16{
+  left: -4rem;
 }
 
 .-left-5{
@@ -542,20 +546,12 @@ video {
   right: -2.5rem;
 }
 
-.-right-14{
-  right: -3.5rem;
-}
-
 .-top-0{
   top: -0px;
 }
 
 .-top-20{
   top: -5rem;
-}
-
-.-top-3{
-  top: -0.75rem;
 }
 
 .-top-96{
@@ -566,12 +562,8 @@ video {
   left: 3.5rem;
 }
 
-.left-2\/4{
-  left: 50%;
-}
-
-.left-24{
-  left: 6rem;
+.left-56{
+  left: 14rem;
 }
 
 .left-8{
@@ -582,8 +574,20 @@ video {
   top: 0px;
 }
 
+.top-3{
+  top: 0.75rem;
+}
+
+.top-3\.5{
+  top: 0.875rem;
+}
+
 .top-36{
   top: 9rem;
+}
+
+.top-5{
+  top: 1.25rem;
 }
 
 .-z-10{
@@ -813,15 +817,6 @@ video {
   width: 100%;
 }
 
-.-rotate-6{
-  --tw-rotate: -6deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform{
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .cursor-pointer{
   cursor: pointer;
 }
@@ -996,6 +991,10 @@ video {
 
 .p-10{
   padding: 2.5rem;
+}
+
+.p-12{
+  padding: 3rem;
 }
 
 .p-2{
@@ -1266,6 +1265,10 @@ footer p{
   border: 2px solid #ff7d3b;
 }
 
+.user-pic{
+  transform: scale(1.2);
+}
+
 .user-text{
   display:none
 }
@@ -1293,7 +1296,7 @@ footer p{
 }
 
 .user-pic{
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
 }
 
 .star{
@@ -1309,6 +1312,18 @@ footer p{
 }
 
 @media (min-width: 768px){
+  .md\:-bottom-52{
+    bottom: -13rem;
+  }
+
+  .md\:-right-14{
+    right: -3.5rem;
+  }
+
+  .md\:block{
+    display: block;
+  }
+
   .md\:grid{
     display: grid;
   }
@@ -1329,6 +1344,10 @@ footer p{
     flex-direction: row;
   }
 
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1346,10 +1365,6 @@ footer p{
 
   .lg\:-right-14{
     right: -3.5rem;
-  }
-
-  .lg\:-top-6{
-    top: -1.5rem;
   }
 
   .lg\:top-72{

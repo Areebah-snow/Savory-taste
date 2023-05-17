@@ -16,7 +16,7 @@ const userPics = document.getElementsByClassName("user-pic")
 function showReview(){
   for(userPic of userPics){
     userPic.classList.remove("active-pic")
-    userPic.style.scale = '1.2'
+    // userPic.style.scale = '1.2'
   }
   for(userText of userTexts){
     userText.classList.remove("active-text")
@@ -26,5 +26,5 @@ function showReview(){
 
   userPics[i].classList.add('active-pic');
   userTexts[i].classList.add('active-text');
-  userPics[i].style.scale = '1.3'
+  // userPics[i].style.scale = '1.3'
 }
