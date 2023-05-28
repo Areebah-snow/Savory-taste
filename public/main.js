@@ -26,5 +26,5 @@ function showReview(){
 
   userPics[i].classList.add('active-pic');
   userTexts[i].classList.add('active-text');
-  // userPics[i].style.scale = '1.3'
+  //userPics[i].style.scale = '1.3'
 }
